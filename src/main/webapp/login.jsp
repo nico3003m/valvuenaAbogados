@@ -1,17 +1,8 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Login - SB Admin</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/estilos.css" rel="stylesheet" />
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    </head>
-    <body id="fondo" class="bg-primary">
+<html>
+    <%@include file='layouts/header.jsp' %>
+    <body>
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -24,20 +15,20 @@
                                     <div class="card-body">
                                         <form>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                                <label for="inputEmail">Email address</label>
+                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" required/>
+                                                <label for="inputEmail">Correo electrónico</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-                                                <label for="inputPassword">Password</label>
+                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" required/>
+                                                <label for="inputPassword">Contraseña</label>
                                             </div>
                                             <div class="form-check mb-3">
                                                 <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
                                                 <label class="form-check-label" for="inputRememberPassword">Recordar contraseña</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a id="forgot-password" class="small" href="password.html">Olvidó su contraseña?</a>
-                                                <a id="ingresar" class="btn btn-primary" href="index.html">Ingresar</a>
+                                                <a id="forgot-password" class="small" href="password.jsp">Olvidó su contraseña?</a>
+                                                <input id="ingresar" class="btn btn-primary" type="submit" href="index.jsp" value="Ingresar">
                                             </div>
                                         </form>
                                     </div>
@@ -51,18 +42,7 @@
                 </main>
             </div>
             <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+                <%@include file='layouts/footer.jsp' %>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

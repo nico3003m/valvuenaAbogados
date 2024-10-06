@@ -1,7 +1,3 @@
-#fondo{
-    background-color: #ffffff !important;
-    
-}
 
 .image-container{
     max-width: 100%;
@@ -16,11 +12,16 @@
     background-color: #ffffff;
 }
 
-#forgot-password{
-    color: #2ab896
+#forgot-password, #return-login{
+    color: #2ab896;
+    text-decoration: none;
 }
 
 #forgot-password:hover{
+    color:#a87b05;
+}
+
+#return-login:hover{
     color:#a87b05;
 }
 
@@ -34,4 +35,21 @@
 
 #ingresar:hover{
     background-color: #a87b05;
+}
+
+.bg-footer{
+    background-color: rgba(21,158,126,0.3);
+}
+
+#pp, #tc{
+    text-decoration: none;
+    color: #000000;
+}
+
+#pp:hover{
+    color:#a87b05;
+}
+
+#tc:hover{
+    color:#a87b05;
 }
