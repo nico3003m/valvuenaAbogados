@@ -1,0 +1,37 @@
+#fondo{
+    background-color: #ffffff !important;
+    
+}
+
+.image-container{
+    max-width: 100%;
+}
+
+.image-responsive{
+    width: 100%;
+    height: auto;
+}
+
+#card-header{
+    background-color: #ffffff;
+}
+
+#forgot-password{
+    color: #2ab896
+}
+
+#forgot-password:hover{
+    color:#a87b05;
+}
+
+.form-control{
+    border: 1px solid #a87b05;
+}
+
+#ingresar{
+    background-color: #159e7e;
+}
+
+#ingresar:hover{
+    background-color: #a87b05;
+}
