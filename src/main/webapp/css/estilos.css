@@ -53,3 +53,8 @@
 #tc:hover{
     color:#a87b05;
 }
+
+.bd-cards-abg{
+    border-color: #a87b05;
+    opacity: 1;
+}
