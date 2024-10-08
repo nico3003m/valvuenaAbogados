@@ -26,7 +26,7 @@ public class Abogados extends Persona{
     }
 
     public Abogados(int id, String cargo, String nTarjetaProf, String especialidad, Cliente cliente, Caso caso, Auxiliar auxiliar, String nombres, String apellidos, int edad, String ceuluar, String correo, String documento, String direccion) {
-        super(nombres, apellidos, edad, ceuluar, correo, documento, direccion);
+        super(id,nombres, apellidos, edad, ceuluar, correo, documento, direccion);
         this.id = id;
         this.cargo = cargo;
         this.nTarjetaProf = nTarjetaProf;

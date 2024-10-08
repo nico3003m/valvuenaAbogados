@@ -26,7 +26,8 @@ public class Persona implements Serializable {
     public Persona() {
     }
 
-    public Persona(String nombres, String apellidos, int edad, String ceuluar, String correo, String documento, String direccion) {
+    public Persona(int id, String nombres, String apellidos, int edad, String ceuluar, String correo, String documento, String direccion) {
+        this.id = id;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.edad = edad;
@@ -35,6 +36,7 @@ public class Persona implements Serializable {
         this.documento = documento;
         this.direccion = direccion;
     }
+
 
     public String getNombres() {
         return nombres;
@@ -86,6 +88,14 @@ public class Persona implements Serializable {
 
     public String getDireccion() {
         return direccion;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setDireccion(String direccion) {

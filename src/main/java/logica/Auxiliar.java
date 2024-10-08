@@ -19,7 +19,7 @@ public class Auxiliar extends Persona {
     }
 
     public Auxiliar(int id, String area, Caso caso, String nombres, String apellidos, int edad, String ceuluar, String correo, String documento, String direccion) {
-        super(nombres, apellidos, edad, ceuluar, correo, documento, direccion);
+        super(id,nombres, apellidos, edad, ceuluar, correo, documento, direccion);
         this.id = id;
         this.area = area;
       
