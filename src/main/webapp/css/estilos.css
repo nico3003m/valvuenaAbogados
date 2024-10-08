@@ -12,12 +12,12 @@
     background-color: #ffffff;
 }
 
-#forgot-password, #return-login{
+#btn-actions, #return-login{
     color: #2ab896;
     text-decoration: none;
 }
 
-#forgot-password:hover{
+#btn-actions:hover{
     color:#a87b05;
 }
 
@@ -57,4 +57,8 @@
 .bd-cards-abg{
     border-color: #a87b05;
     opacity: 1;
+}
+
+.bg-black{
+    background-color: rgba(146,131,2,1) !important;
 }

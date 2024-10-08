@@ -27,7 +27,7 @@
                                                 <label class="form-check-label" for="inputRememberPassword">Recordar contraseña</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a id="forgot-password" class="small" href="password.jsp">Olvidó su contraseña?</a>
+                                                <a id="btn-actions" class="small" href="password.jsp">Olvidó su contraseña?</a>
                                                 <input id="ingresar" class="btn btn-primary" type="submit" href="index.jsp" value="Ingresar">
                                             </div>
                                         </form>
