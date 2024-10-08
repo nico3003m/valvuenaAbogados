@@ -62,3 +62,31 @@
 .bg-black{
     background-color: rgba(146,131,2,1) !important;
 }
+button#buttonEditar {
+    background-color: green; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 5px 15px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+button#buttonEditar:hover {
+    background-color: darkgreen; 
+}
+
+button#buttonEliminar {
+    background-color: red; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+        padding: 5px 15px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+button#buttonEliminar:hover {
+    background-color: darkred; /* Cambia el color al hacer hover */
+}
+    

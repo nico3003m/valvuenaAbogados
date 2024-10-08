@@ -8,7 +8,7 @@
             <div id="layoutSidenav_content">
                 <div class="card mb-4">
                     <div class="card-header">
-                        <i class="fas fa-table me-1"></i>
+                        <i class="fas fa-file-lines"></i>
                         Plantillas
                     </div>
                     <div class="card-body">
@@ -16,18 +16,18 @@
                             <thead>
                                 <tr>
                                     <th>Nombre</th>
-                                    <th>funcion </th>
-                                    <th>tipo</th>
-                                    <th>ver</th>
+                                    <th>Funcion </th>
+                                    <th>Tipo</th>
+                                    <th>Visualizar</th>
                                     <th>Eliminar</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>Nombre</th>
-                                    <th>funcion </th>
-                                    <th>tipo</th>
-                                    <th>ver</th>
+                                    <th>Funcion </th>
+                                    <th>Tipo</th>
+                                    <th>Visualizar</th>
                                     <th>Eliminar</th>
 
                                 </tr>
@@ -37,8 +37,8 @@
                                     <td>Tutela </td>
                                     <td>Ejecutar una accion de tutela</td>
                                     <td>Pdf</td>
-                                    <td>ver</td>
-                                    <td>Eliminar</td>
+                                    <td><button  id="buttonEditar"style="text-align: center"><i class="fas fa-eye"></button></i></td>
+                                    <td> <button id="buttonEliminar" style="text-align: center"><i class="fas fa-trash"></button></i></td>
                                     
                                 </tr>
                             </tbody>

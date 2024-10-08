@@ -4,12 +4,12 @@
             <div class="nav">
 
                 <a class="nav-link" href="index.jsp">
-                    <div class="sb-nav-link-icon"><i style="color: #000000c9" class="fas fa-tachometer-alt"></i></div>
+                    <div class="sb-nav-link-icon"><i style="color: #000000c9" class="fas fa-house"></i></div>
                     Inicio
                 </a>
 
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCasos" aria-expanded="false" aria-controls="collapseLayouts">
-                    <div class="sb-nav-link-icon"><i style="color: #000000c9"class="fas fa-columns"></i></div>
+                    <div class="sb-nav-link-icon"><i style="color: #000000c9"class="fas fa-gavel"></i></div>
                     Casos
                     <div class="sb-sidenav-collapse-arrow"> <i style="color: #000000c9" class="fas fa-angle-down"></i></div>
                 </a>
@@ -22,7 +22,7 @@
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseAbogados" aria-expanded="false" aria-controls="collapsePages">
-                    <div class="sb-nav-link-icon"><i style="color: #000000c9" class="fas fa-book-open"></i></div>
+                    <div class="sb-nav-link-icon"><i style="color: #000000c9" class="fas fa-briefcase"></i></div>
                     Abogados
                     <div class="sb-sidenav-collapse-arrow"><i style="color: #000000c9" class="fas fa-angle-down"></i></div>
                 </a>
@@ -36,7 +36,7 @@
 
 
                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseArchivos" aria-expanded="false" aria-controls="collapseLayouts">
-                    <div class="sb-nav-link-icon"><i  style="color: #000000c9" class="fas fa-columns"></i></div>
+                    <div class="sb-nav-link-icon"><i  style="color: #000000c9" class="far fa-folder-open"></i></div>
                     Archivos
                     <div class="sb-sidenav-collapse-arrow"><i style="color: #000000c9" class="fas fa-angle-down"></i></div>
                 </a>
@@ -47,14 +47,14 @@
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCliente" aria-expanded="false" aria-controls="collapseLayouts">
-                    <div class="sb-nav-link-icon"><i style="color: #000000c9" class="fas fa-columns"></i></div>
+                    <div class="sb-nav-link-icon"><i style="color: #000000c9" class="fas fa-person"></i></div>
                     Clientes
                     <div class="sb-sidenav-collapse-arrow"><i style="color: #000000c9" class="fas fa-angle-down"></i></div>
                 </a>
                 <div class="collapse" id="collapseCliente" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="layout-static.html">Clientes</a>
-                        <a class="nav-link" href="layout-sidenav-light.html">Informacion cliente</a>
+                        <a class="nav-link" href="viewClientes.jsp">Ver clientes</a>
+                        <a class="nav-link" href="layout-sidenav-light.html">Crear Clientes</a>
                     </nav>
                 </div>
                

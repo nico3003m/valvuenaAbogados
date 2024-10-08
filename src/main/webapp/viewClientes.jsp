@@ -8,37 +8,36 @@
             <div id="layoutSidenav_content">
                 <div class="card mb-4">
                     <div class="card-header">
-                        <i class="fas fa-scale-balanced"></i>
-                        Gestión abogados
+                        <i class="fas fa-user"></i>
+                        Gestión Clientes
                     </div>
                     <div class="card-body">
                         <table id="datatablesSimple">
                             <thead>
                                 <tr>
-                                    <th>Nombre</th>
+                                    <th>Nombres</th>
                                     <th>Apellidos</th>
-                                    <th>Cargo</th>
-                                    <th>Correo</th>
-                                    <th>Celular</th>
-                                    <th>Documento</th>
-                                    <th>Dirección</th>
                                     <th>Edad</th>
-                                    <th>Especialidad</th>
+                                    <th>Fecha nacimiento</th>
+                                    <th>Número Documento</th>
+                                    <th>Dirección</th>
+                                    <th>Correo</th>
+                                    <th>Telefono</th>
                                     <th>Editar</th>
                                     <th>Eliminar</th>
+
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Nombre</th>
+                                    <th>Nombres</th>
                                     <th>Apellidos</th>
-                                    <th>Cargo</th>
-                                    <th>Correo</th>
-                                    <th>Celular</th>
-                                    <th>Documento</th>
-                                    <th>Dirección</th>
                                     <th>Edad</th>
-                                    <th>Especialidad</th>
+                                    <th>Fecha nacimiento</th>
+                                    <th>Número Documento</th>
+                                    <th>Dirección</th>
+                                    <th>Correo</th>
+                                    <th>Telefono</th>
                                     <th>Editar</th>
                                     <th>Eliminar</th>
                                 </tr>
@@ -47,15 +46,14 @@
                                 <tr>         
                                     <td>Armando </td>
                                     <td>casas</td>
-                                    <td>Abogado</td>
-                                    <td>ArmandoCasas@valvuenaAbogados.com</td>
-                                    <td>30002022021</td>
-                                    <td>21025110</td>
-                                    <td>Penal</td>
-                                    <td>21</td>
-                                    <td>Penal</td>
-                                     <td> <button  id="buttonEditar"><i class="fas fa-pen-ruler"></button></i></td>
-                                     <td> <button id="buttonEliminar" style="text-align: center"><i class="fas fa-trash"></button></i></td>
+                                    <td>15 </td>
+                                    <td>13/02/2023</td>
+                                    <td>65555551</td>
+                                    <td>calle 11 sur</td>
+                                    <td>pepe@gmail.com</td>
+                                    <td>852</td>
+                                    <td> <button  id="buttonEditar"><i class="fas fa-pen-ruler"></button></i></td>
+                                    <td> <button id="buttonEliminar" style="text-align: center"><i class="fas fa-trash"></button></i></td>
                                 </tr>
                             </tbody>
                         </table>
