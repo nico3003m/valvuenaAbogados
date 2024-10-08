@@ -3,9 +3,9 @@
         <div class="sb-sidenav-menu">
             <div class="nav">
 
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="index.jsp">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    Perfil
+                    Inicio
                 </a>
 
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCasos" aria-expanded="false" aria-controls="collapseLayouts">
