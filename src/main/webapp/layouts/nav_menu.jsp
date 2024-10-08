@@ -18,7 +18,7 @@
                     <nav class="sb-sidenav-menu-nested nav" style="color: #000000c9;">
                         
                         <a class="nav-link" href="viewCasos.jsp">Ver Casos</a>
-                        <a class="nav-link" href="layout-sidenav-light.html">Crear Casos</a>
+                        <a class="nav-link" href="createCasos.jsp">Crear Casos</a>
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseAbogados" aria-expanded="false" aria-controls="collapsePages">
@@ -29,7 +29,7 @@
                 <div class="collapse" id="collapseAbogados" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="viewAbogados.jsp">Ver Abogados</a>
-                        <a class="nav-link" href="layout-sidenav-light.html">Crear Abogados</a>
+                        <a class="nav-link" href="createAbogados.jsp">Crear Abogados</a>
                     </nav>
                 </div>
 
@@ -54,7 +54,7 @@
                 <div class="collapse" id="collapseCliente" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="viewClientes.jsp">Ver clientes</a>
-                        <a class="nav-link" href="layout-sidenav-light.html">Crear Clientes</a>
+                        <a class="nav-link" href="createClientes.jsp">Crear Clientes</a>
                     </nav>
                 </div>
                

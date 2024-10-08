@@ -25,7 +25,7 @@
     color:#a87b05;
 }
 
-.form-control{
+.form-select, .form-control{
     border: 1px solid #a87b05;
 }
 
@@ -88,5 +88,25 @@ button#buttonEliminar {
 
 button#buttonEliminar:hover {
     background-color: darkred; /* Cambia el color al hacer hover */
+}
+
+#card-form-principal{
+    background-color: rgba(242,255,254,0.4);
+    
+}
+
+#form-container{
+    width: 70%;
+    height: auto;
+    margin: 15px auto;
+    background-color: #fff;  
+    border-radius: 15px;
+    box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+}
+
+#form-container form{
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
 }
     

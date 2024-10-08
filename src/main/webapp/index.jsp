@@ -14,7 +14,7 @@
                             <div class="row justify-content-md-center">
                                 <div class="col-12 col-md-10 col-lg-8 col-xl-7">
                                     <h2 class="fs-8 mb-4 text-secondary text-center text-uppercase">Bienvenido</h2>
-                                    <h4 class="display-8 mb-2 text-center">A continuación, encontraras las opciones que tienes disponibles</h4>
+                                    <h4 class="display-8 mb-2 text-center">A continuación, encontrarás las opciones que tienes disponibles</h4>
                                     <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
                                 </div>
                             </div>

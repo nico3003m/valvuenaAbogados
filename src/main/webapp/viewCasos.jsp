@@ -20,7 +20,7 @@
                                     <th>Estado</th>
                                     <th>Fecha Inicio</th>
                                     <th>Juzgado</th>
-                                    <th>Tipo Caso</th>
+                                    <th>Fecha Finalización</th>
                                     <th>Archivos</th>
                                     <th>Tipo Caso</th>
                                     <th>Comentarios</th>
