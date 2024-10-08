@@ -22,12 +22,12 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <label for="name" class="form-label">Nombre del Abogado</label>
-                                            <input type="text" name="name" class="form-control"  placeholder="Nombre del abogado" required>
+                                            <label for="name" class="form-label">Nombre del Cliente</label>
+                                            <input type="text" name="name" class="form-control"  placeholder="Nombre del Cliente" required>
                                         </td>
                                         <td>
-                                            <label for="apellidos" class="form-label">Apellidos</label>
-                                            <input type="text" name="apellidos" class="form-control"  placeholder="Apellidos del abogado" required>
+                                            <label for="apellidos" class="form-label">Apellidos del Cliente</label>
+                                            <input type="text" name="apellidos" class="form-control"  placeholder="Apellidos del Cliente" required>
                                         </td>
                                     </tr>
                                     <tr>
