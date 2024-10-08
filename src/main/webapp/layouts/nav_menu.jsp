@@ -11,10 +11,11 @@
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCasos" aria-expanded="false" aria-controls="collapseLayouts">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                     Casos
-                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    <div class="sb-sidenav-collapse-arrow"></div>
                 </a>
                 <div class="collapse" id="collapseCasos" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                    <nav class="sb-sidenav-menu-nested nav">
+                    <nav class="sb-sidenav-menu-nested nav" style="color: black;">
+                        <i class="fas fa-angle-down"></i>
                         <a class="nav-link" href="svCasos">Ver Casos</a>
                         <a class="nav-link" href="layout-sidenav-light.html">Crear Casos</a>
                     </nav>

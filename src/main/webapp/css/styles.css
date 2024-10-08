@@ -41,7 +41,7 @@
     --bs-light-rgb: 248, 249, 250;
     --bs-dark-rgb: 33, 37, 41;
     --bs-white-rgb: 255, 255, 255;
-    --bs-black-rgb: 0, 0, 0;
+    --bs-black-rgb: 212, 160, 0;
     --bs-golden-rgb:168,123,5;
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg-rgb: 255, 255, 255;
@@ -8173,7 +8173,7 @@ textarea.form-control-lg {
 
 .bg-dark {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    background-color:  #2d8765 !important;
 }
 
 .bg-black {
@@ -11014,14 +11014,14 @@ body {
 }
 
 .sb-sidenav-dark {
-    background-color: #212529;
+    background-color: #3eae84;
     color: rgba(255, 255, 255, 0.5);
 }
 .sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading {
     color: rgba(255, 255, 255, 0.25);
 }
 .sb-sidenav-dark .sb-sidenav-menu .nav-link {
-    color: rgba(255, 255, 255, 0.5);
+    color: #000000;
 }
 .sb-sidenav-dark .sb-sidenav-menu .nav-link .sb-nav-link-icon {
     color: rgba(255, 255, 255, 0.25);
@@ -11039,7 +11039,7 @@ body {
     color: #fff;
 }
 .sb-sidenav-dark .sb-sidenav-footer {
-    background-color: #343a40;
+    background-color: #4bca9a;
 }
 
 .sb-sidenav-light {
@@ -11050,7 +11050,7 @@ body {
     color: #adb5bd;
 }
 .sb-sidenav-light .sb-sidenav-menu .nav-link {
-    color: #212529;
+    color: #000000;
 }
 .sb-sidenav-light .sb-sidenav-menu .nav-link .sb-nav-link-icon {
     color: #adb5bd;
