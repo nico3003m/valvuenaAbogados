@@ -1,6 +1,6 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+<nav id="fondoNav" class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <!-- Navbar Brand-->
     <a class="navbar-brand ps-3" href="index.jsp">Valbuena Abogados</a>
     <!-- Sidebar Toggle-->
