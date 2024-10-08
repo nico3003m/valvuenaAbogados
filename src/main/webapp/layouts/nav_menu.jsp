@@ -15,7 +15,7 @@
                 </a>
                 <div class="collapse" id="collapseCasos" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="svCasos">Ver Casos</a>
+                        <a class="nav-link" href="casos.jsp">Ver Casos</a>
                         <a class="nav-link" href="layout-sidenav-light.html">Crear Casos</a>
                     </nav>
                 </div>
