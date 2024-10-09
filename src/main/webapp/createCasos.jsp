@@ -61,6 +61,14 @@
                                     </tr>
                                     <tr>
                                         <td>
+                                            <label for="dateInicial" class="form-label">Abogado Encargado</label>
+                                            <input type="text" name="abogado" class="form-control" required>
+
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
                                             <label for="formFile" class="form-label">Archivos Adjuntos</label>
                                             <input class="form-control" type="file" name="formFile" multiple>
                                         </td>
