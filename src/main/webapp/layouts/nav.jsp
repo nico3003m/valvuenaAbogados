@@ -17,7 +17,7 @@
                 <li><a class="dropdown-item" href="#!">Configuración</a></li>
                 <li><a class="dropdown-item" href="#!">Actividad</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#!">Cerrar Sesión</a></li>
+                <li><a class="dropdown-item" href="login.jsp">Cerrar Sesión</a></li>
             </ul>
         </li>
     </ul>
