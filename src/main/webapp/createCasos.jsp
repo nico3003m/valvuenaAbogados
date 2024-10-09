@@ -24,7 +24,7 @@
                                     <tr>
                                         <td>
                                             <label for="name" class="form-label">Nombre del Cliente</label>
-                                            <input type="text" name="name" class="form-control"  placeholder="Nombre" required>
+                                            <input type="text" name="name" class="form-control"  placeholder="Nombre" required autofocus>
                                         </td>
                                         <td>
                                             <label for="radicado" class="form-label">Número del radicado</label>

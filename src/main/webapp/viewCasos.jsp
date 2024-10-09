@@ -49,12 +49,9 @@
                                     <td>13/02/2023</td>
                                     <td>61</td>
                                     <td>2011/04/25</td>
-                                    <td><button  id="buttonEditar"style="text-align: center"><i class="fas fa-eye"></button></i></td>
+                                    <td><button  id="buttonEditar"style="text-align: center"><a href="viewArchivos.jsp"> <i class="fas fa-eye"></a></button></i></td>
                                     <td>Judicial</td>
-                                    <td><button  id="buttonEditar"style="text-align: center"><i class="fas fa-comments"></button></i></td>
-
-
-
+                                    <td><button  id="buttonEditar"style="text-align: center"><a href="viewComentarios.jsp"><i class="fas fa-comments"></a></button></i></td>
                                 </tr>
 
                             </tbody>

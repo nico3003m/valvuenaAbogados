@@ -24,7 +24,7 @@
                                     <tr>
                                         <td>
                                             <label for="name" class="form-label">Nombre del Abogado</label>
-                                            <input type="text" name="name" class="form-control"  placeholder="Nombres del abogado" required>
+                                            <input type="text" name="name" class="form-control"  placeholder="Nombres del abogado" required autofocus>
                                         </td>
                                         <td>
                                             <label for="apellidos" class="form-label">Apellidos</label>

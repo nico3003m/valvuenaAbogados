@@ -15,7 +15,7 @@
                                     <div class="card-body">
                                         <form action="svLogin" method="POST">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com"  name="email"required/>
+                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com"  name="email"required autofocus/>
                                                 <label for="inputEmail">Correo electrónico</label>
                                             </div>
                                             <div class="form-floating mb-3">

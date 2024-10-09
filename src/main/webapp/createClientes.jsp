@@ -23,7 +23,7 @@
                                     <tr>
                                         <td>
                                             <label for="name" class="form-label">Nombre del Cliente</label>
-                                            <input type="text" name="name" class="form-control"  placeholder="Nombres del Cliente" required>
+                                            <input type="text" name="name" class="form-control"  placeholder="Nombres del Cliente" required autofocus
                                         </td>
                                         <td>
                                             <label for="apellidos" class="form-label">Apellidos del Cliente</label>
