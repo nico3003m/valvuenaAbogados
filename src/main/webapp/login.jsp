@@ -13,13 +13,13 @@
                                     <div class="image-container"><img src="img/logo.jpg" alt="logo" class="image-responsive"/></div>
                                     <div id="card-header" class="card-header"><h3 class="text-center font-weight-light my-4">Iniciar Sesión</h3></div>
                                     <div class="card-body">
-                                        <form>
+                                        <form action="svLogin" method="POST">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" required/>
+                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com"  name="email"required/>
                                                 <label for="inputEmail">Correo electrónico</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" required/>
+                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" name="password"required/>
                                                 <label for="inputPassword">Contraseña</label>
                                             </div>
                                             <div class="form-check mb-3">
