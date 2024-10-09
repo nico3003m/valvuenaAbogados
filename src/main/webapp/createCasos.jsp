@@ -61,8 +61,13 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <label for="dateInicial" class="form-label">Abogado Encargado</label>
-                                            <input type="text" name="abogado" class="form-control" required>
+                                            <label for="estadoCaso" class="form-label">Abogado Asignado</label>
+                                            <select class="form-select" name="estadoCaso" required>
+                                                <option selected>Elige una opción</option>
+                                                <option value="abierto">Juan Duque</option>
+                                                <option value="progreso">Jose Sierra</option>
+                                                <option value="cerrado">Romulo Caicedo</option>
+                                            </select>
 
                                         </td>
                                         
