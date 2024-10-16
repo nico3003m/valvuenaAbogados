@@ -2,13 +2,14 @@
 package controladora;
 
 
-import persistencia.AbogadoJpaController;
-import persistencia.ArchivoJpaController;
-import persistencia.AuxiliarJpaController;
-import persistencia.CasoJpaController;
-import persistencia.ClienteJpaController;
-import persistencia.ComentarioJpaController;
-import persistencia.PersonaJpaController;
+import logica.Abogado;
+import persistence.AbogadoJpaController;
+import persistence.ArchivoJpaController;
+import persistence.AuxiliarJpaController;
+import persistence.CasoJpaController;
+import persistence.ClienteJpaController;
+import persistence.ComentarioJpaController;
+import persistence.PersonaJpaController;
 
 /**
  *
@@ -22,4 +23,9 @@ public class ControladoraJpa {
     ClienteJpaController clienteJpa = new ClienteJpaController();
     ComentarioJpaController comentarioJpa= new ComentarioJpaController();
     PersonaJpaController personaJpa = new PersonaJpaController();
+    
+    public void crearAbogado (Abogado abg){
+        abogadoJpa.create(abg);
+        
+    }
 }

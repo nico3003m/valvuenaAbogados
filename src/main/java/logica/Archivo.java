@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package logica;
 
 import java.io.Serializable;
@@ -14,8 +10,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-@Entity
+@Entity(name = "ArchivoEntidad")
 public class Archivo implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -32,6 +29,15 @@ public class Archivo implements Serializable {
     private List<Comentario> comentarios;
 
     public Archivo() {
+    }
+
+    public Archivo(Long id, String nombre, String ruta, String tipo, Caso caso, List<Comentario> comentarios) {
+        this.id = id;
+        this.nombre = nombre;
+        this.ruta = ruta;
+        this.tipo = tipo;
+        this.caso = caso;
+        this.comentarios = comentarios;
     }
 
     public Long getId() {
@@ -82,5 +88,4 @@ public class Archivo implements Serializable {
         this.comentarios = comentarios;
     }
 
-    
 }

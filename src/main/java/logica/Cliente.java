@@ -3,7 +3,7 @@ package logica;
 import javax.persistence.*;
 import java.util.List;
 
-@Entity
+@Entity(name = "ClienteEntidad")
 public class Cliente extends Persona {
     @OneToMany(mappedBy = "cliente")
     private List<Caso> casos;

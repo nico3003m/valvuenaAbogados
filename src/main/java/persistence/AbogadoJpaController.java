@@ -1,5 +1,8 @@
-
-package persistencia;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package persistence;
 
 import java.io.Serializable;
 import javax.persistence.Query;
@@ -13,9 +16,12 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import logica.Abogado;
-import persistencia.exceptions.NonexistentEntityException;
+import persistence.exceptions.NonexistentEntityException;
 
-
+/**
+ *
+ * @author Nicolas Moreno
+ */
 public class AbogadoJpaController implements Serializable {
 
     public AbogadoJpaController(EntityManagerFactory emf) {

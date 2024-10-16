@@ -1,5 +1,8 @@
-
-package persistencia;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package persistence;
 
 import java.io.Serializable;
 import javax.persistence.Query;
@@ -15,7 +18,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import logica.Caso;
-import persistencia.exceptions.NonexistentEntityException;
+import persistence.exceptions.NonexistentEntityException;
 
 /**
  *
@@ -26,7 +29,7 @@ public class CasoJpaController implements Serializable {
     public CasoJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
-      public CasoJpaController() {
+      public CasoJpaController( ) {
         emf = Persistence.createEntityManagerFactory("valbuenaAbogadosPU");
     }
     private EntityManagerFactory emf = null;

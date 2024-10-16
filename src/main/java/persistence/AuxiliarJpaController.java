@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package persistencia;
+package persistence;
 
 import java.io.Serializable;
 import java.util.List;
@@ -13,19 +13,19 @@ import javax.persistence.EntityNotFoundException;
 import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
-import logica.Persona;
-import persistencia.exceptions.NonexistentEntityException;
+import logica.Auxiliar;
+import persistence.exceptions.NonexistentEntityException;
 
 /**
  *
  * @author Nicolas Moreno
  */
-public class PersonaJpaController implements Serializable {
+public class AuxiliarJpaController implements Serializable {
 
-    public PersonaJpaController(EntityManagerFactory emf) {
+    public AuxiliarJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
-      public PersonaJpaController() {
+      public AuxiliarJpaController( ) {
         emf = Persistence.createEntityManagerFactory("valbuenaAbogadosPU");
     }
     private EntityManagerFactory emf = null;
@@ -34,12 +34,12 @@ public class PersonaJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
-    public void create(Persona persona) {
+    public void create(Auxiliar auxiliar) {
         EntityManager em = null;
         try {
             em = getEntityManager();
             em.getTransaction().begin();
-            em.persist(persona);
+            em.persist(auxiliar);
             em.getTransaction().commit();
         } finally {
             if (em != null) {
@@ -48,19 +48,19 @@ public class PersonaJpaController implements Serializable {
         }
     }
 
-    public void edit(Persona persona) throws NonexistentEntityException, Exception {
+    public void edit(Auxiliar auxiliar) throws NonexistentEntityException, Exception {
         EntityManager em = null;
         try {
             em = getEntityManager();
             em.getTransaction().begin();
-            persona = em.merge(persona);
+            auxiliar = em.merge(auxiliar);
             em.getTransaction().commit();
         } catch (Exception ex) {
             String msg = ex.getLocalizedMessage();
             if (msg == null || msg.length() == 0) {
-                int id = persona.getId();
-                if (findPersona(id) == null) {
-                    throw new NonexistentEntityException("The persona with id " + id + " no longer exists.");
+                int id = auxiliar.getId();
+                if (findAuxiliar(id) == null) {
+                    throw new NonexistentEntityException("The auxiliar with id " + id + " no longer exists.");
                 }
             }
             throw ex;
@@ -76,14 +76,14 @@ public class PersonaJpaController implements Serializable {
         try {
             em = getEntityManager();
             em.getTransaction().begin();
-            Persona persona;
+            Auxiliar auxiliar;
             try {
-                persona = em.getReference(Persona.class, id);
-                persona.getId();
+                auxiliar = em.getReference(Auxiliar.class, id);
+                auxiliar.getId();
             } catch (EntityNotFoundException enfe) {
-                throw new NonexistentEntityException("The persona with id " + id + " no longer exists.", enfe);
+                throw new NonexistentEntityException("The auxiliar with id " + id + " no longer exists.", enfe);
             }
-            em.remove(persona);
+            em.remove(auxiliar);
             em.getTransaction().commit();
         } finally {
             if (em != null) {
@@ -92,19 +92,19 @@ public class PersonaJpaController implements Serializable {
         }
     }
 
-    public List<Persona> findPersonaEntities() {
-        return findPersonaEntities(true, -1, -1);
+    public List<Auxiliar> findAuxiliarEntities() {
+        return findAuxiliarEntities(true, -1, -1);
     }
 
-    public List<Persona> findPersonaEntities(int maxResults, int firstResult) {
-        return findPersonaEntities(false, maxResults, firstResult);
+    public List<Auxiliar> findAuxiliarEntities(int maxResults, int firstResult) {
+        return findAuxiliarEntities(false, maxResults, firstResult);
     }
 
-    private List<Persona> findPersonaEntities(boolean all, int maxResults, int firstResult) {
+    private List<Auxiliar> findAuxiliarEntities(boolean all, int maxResults, int firstResult) {
         EntityManager em = getEntityManager();
         try {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
-            cq.select(cq.from(Persona.class));
+            cq.select(cq.from(Auxiliar.class));
             Query q = em.createQuery(cq);
             if (!all) {
                 q.setMaxResults(maxResults);
@@ -116,20 +116,20 @@ public class PersonaJpaController implements Serializable {
         }
     }
 
-    public Persona findPersona(int id) {
+    public Auxiliar findAuxiliar(int id) {
         EntityManager em = getEntityManager();
         try {
-            return em.find(Persona.class, id);
+            return em.find(Auxiliar.class, id);
         } finally {
             em.close();
         }
     }
 
-    public int getPersonaCount() {
+    public int getAuxiliarCount() {
         EntityManager em = getEntityManager();
         try {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
-            Root<Persona> rt = cq.from(Persona.class);
+            Root<Auxiliar> rt = cq.from(Auxiliar.class);
             cq.select(em.getCriteriaBuilder().count(rt));
             Query q = em.createQuery(cq);
             return ((Long) q.getSingleResult()).intValue();

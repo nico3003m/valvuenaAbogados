@@ -16,10 +16,8 @@
                     <div id="form-container" class="card-body">
                         <h4 class="mb-2 text-center">Formulario para el Registro de Abogados</h4>
 
-                        <form action="" method="POST">
-
+                        <form action="svAbogados" method="POST">
                             <table class="table">
-
                                 <tbody>
                                     <tr>
                                         <td>

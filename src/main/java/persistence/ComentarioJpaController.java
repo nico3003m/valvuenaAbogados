@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package persistencia;
+package persistence;
 
 import java.io.Serializable;
 import java.util.List;
@@ -15,7 +15,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import logica.Archivo;
 import logica.Comentario;
-import persistencia.exceptions.NonexistentEntityException;
+import persistence.exceptions.NonexistentEntityException;
 
 /**
  *
@@ -26,7 +26,7 @@ public class ComentarioJpaController implements Serializable {
     public ComentarioJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
-      public ComentarioJpaController() {
+      public ComentarioJpaController( ) {
         emf = Persistence.createEntityManagerFactory("valbuenaAbogadosPU");
     }
     private EntityManagerFactory emf = null;
