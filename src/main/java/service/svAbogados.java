@@ -14,7 +14,7 @@ public class svAbogados extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      
+
     }
 
     @Override
@@ -29,16 +29,18 @@ public class svAbogados extends HttpServlet {
         String nombre = request.getParameter("name");
         String apellidos = request.getParameter("apellidos");
         String correo = request.getParameter("correo");
-        String cargo = request.getParameter("documento");
+        String documento = request.getParameter("documento");
         String celular = request.getParameter("celular");
-        String edad =  request.getParameter("edad");
+        String edad = request.getParameter("edad");
         String direccion = request.getParameter("direccion");
         String especialidad = request.getParameter("especialidad");
-        
+        String cargo = request.getParameter("cargo");
+        String nTarjetaProfesional = request.getParameter("nTarjetaProfesional");
+
         ControladoraClass controladora = new ControladoraClass();
-        controladora.crearAbogado(nombre,apellidos,correo,cargo,celular,edad,direccion,especialidad);
-        
-        System.out.println("ingreso:"+nombre+"ingreso:"+apellidos+"ingreso:"+correo+"ingreso:"+cargo+"ingreso:"+celular+"ingreso:"+edad+"ingreso:"+direccion+"ingreso:"+especialidad);
+        controladora.crearAbogado(nombre, apellidos, correo, documento, celular, edad, direccion, especialidad,cargo,nTarjetaProfesional);
+
+        System.out.println("ingreso:" + nombre + "ingreso:" + apellidos + "ingreso:" + correo + "ingreso:" + cargo + "ingreso:" + celular + "ingreso:" + edad + "ingreso:" + direccion + "ingreso:" + especialidad);
         response.sendRedirect("createAbogados.jsp");
     }
 

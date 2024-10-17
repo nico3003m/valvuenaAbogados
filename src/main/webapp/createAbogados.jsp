@@ -35,10 +35,11 @@
                                             <input type="email" name="correo" class="form-control"  placeholder="correo@example.com" required>
                                         </td>
                                         <td>
-                                            <label for="cargo" class="form-label">Cargo</label>
-                                            <input type="text" name="cargo" class="form-control"  placeholder="Cargo" required>
-
-                                        </td>
+                                            <label for="especialidad" class="form-label">Tarjeta profesional</label>
+                                            <input class="form-control" type="text" name="nTarjetaProfesional" placeholder="tarjetaProfesional" required>
+                                            
+                                        </td>   
+                                        
                                     </tr>
                                     <tr>
                                         <td>
@@ -70,6 +71,15 @@
                                             <label for="especialidad" class="form-label">Especialidad</label>
                                             <input class="form-control" type="text" name="especialidad" placeholder="Especialidad" required>
                                         </td>
+                                        <td>
+                                            <label for="especialidad" class="form-label">Cargo</label>
+                                            <input class="form-control" type="text" name="cargo" placeholder="cargo" required>
+                                            
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        
                                     </tr>
                                     <tr>
                                         <td>
